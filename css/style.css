@@ -21,6 +21,16 @@ html,
   margin: 0 auto;
 }
 
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 30px;
+    padding-left: 100px;
+}
+
+
 .myName {
 
   font-family: "adore-you", sans-serif;
@@ -91,7 +101,7 @@ img {
   margin-top: 20px;
   margin-left: 100px;
   margin-right: 100px;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 
 #icon-container {
