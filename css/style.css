@@ -10,6 +10,7 @@ html,
 #mainNav {
   display: flex;
   flex-direction: row;
+  position: relative;
   gap: 60px;
   font-family: "adonis-web", serif;
   font-weight: 400;
@@ -18,21 +19,42 @@ html,
   color: black;
   text-decoration: none;
   list-style: none;
-  margin: 0 auto;
+}
+
+#hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #dea175;
+}
+
+#hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #dea175;
+  transform-origin: right;
+  transition: transform 0.25s ease-out;
+}
+
+#hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 h2 {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 h3 {
-    font-size: 30px;
-    padding-left: 100px;
+  font-size: 30px;
+  padding-left: 100px;
 }
 
-
 .myName {
-
   font-family: "adore-you", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -56,8 +78,8 @@ section {
 
 a:hover {
   color: #dea175;
-  transform: 2s;
 }
+
 img {
   width: 100%;
 }
@@ -92,6 +114,14 @@ img {
   transform: translate(-50%, -50%);
 }
 
+.myLink {
+    color:  #dea175;
+}
+
+.myLink:hover {
+    color: grey;
+}
+
 #orange {
   border: 1px solid #dea175;
 }
@@ -116,6 +146,7 @@ img {
   margin: 10px;
 }
 
+
 #icon2 {
   font-size: 30px;
   margin: 10px;
@@ -125,4 +156,3 @@ img {
   font-size: 30px;
   margin: 10px;
 }
-
