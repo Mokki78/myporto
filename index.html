@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://use.typekit.net/ckd5ojd.css">
     <link rel="stylesheet" href="https://use.typekit.net/ckd5ojd.css">
 
+
     <script src="https://kit.fontawesome.com/e82fe9e5d2.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js" defer></script>
 
     <title>Portofolio | Monika Saele</title>
 
@@ -74,51 +76,105 @@
 <section>
     <div id="section2">
         <h3>Front-end</h3>
-        <div>
+        <div class="f-e-card-container">
+            <div class="card">
+                <div class="card-side front">
+                    <img src="./assets/screenshot_of_react_store.png">
+                </div>
+                <div class="card-side back">
+                    <div>
+                        <h2>React app</h2>
+                        <p>This was an assignment at Noroff School of Technology and Digital media, Andthe assignment was to build an ecommerce store using API in React.</p>
+                        <a href="https://coruscating-madeleine-4aae8d.netlify.app">Link to website</a>
+                    </div>
+                </div>
 
+            </div>
+            <div class="card">
+                <div class="card-side front">
+                    <img src="./assets/screenshot_ca_js2.jpg">
+                </div>
+                <div class="card-side back"></div>
 
+            </div>
+            
         </div>
     </div>
 </section>
 <section>
     <div id="section3">
         <h3>UI design</h3>
-        <div></div>
+        <div class="f-e-card-container">
+            <div class="card">
+                <div class="card-side front">
+                    <img src="./assets/screenshot_treelife.png">
+                </div>
+                <div class="card-side back">
+                    <div>
+                        <h2>React app</h2>
+                        <p>This was an assignment at Noroff School of Technology and Digital media, Andthe assignment was to build an ecommerce store using API in React.</p>
+                        <a href="https://coruscating-madeleine-4aae8d.netlify.app">Link to website</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-side front">
+                    <img src="./assets/screenshot_of_joso.png">
+                </div>
+                <div class="card-side back"></div>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-side front">
+                <img src="./assets/screenshot_of_pizza-slice.png">
+            </div>
+            <div class="card-side back"></div>
+
+        </div>
+            
+        </div>
+       
     </div>
 </section>
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+</div>
 <section>
     <div id="section4">
         <h3>Photography</h3>
         <div class="image-container">
             <div class="photo-gallery">
                 <div class="column">
-                    <div class="photo">
-                        <img src="./assets/fotograf_larvik_vestfold_sandefjord_barnefotograf_portrett_1.jpg" alt="">
+                    <div class="photo" id="myImage">
+                        <img src="./assets/fotograf_larvik_vestfold_sandefjord_barnefotograf_portrett_1.jpg" id="alt=">
                     </div>
-                    <div class="photo">
+                    <div class="photo" id="myImage">
                         <img src="./assets/fotograf_larvik_vestfold_sandefjord_barnefotograf_portrett_2.jpg" alt="">
                     </div>
-                    <div class="photo">
+                    <div class="photo" id="myImage">
                         <img src="./assets/fotograf_larvik_vestfold_sandefjord_barnefotograf_portrett_3.jpg" alt="">
                     </div>
                 </div>
                 <div class="column">
-                    <div class="photo">
+                    <div class="photo" id="myImage">
                         <img src="./assets/fotograf_larvik_vestfold_sandefjord_barnefotograf_portrett_4.jpg" alt="">
                     </div>
-                    <div class="photo">
+                    <div class="photo" id="myImage">
                         <img src="./assets/fotograf_larvik_vestfold_sandefjord_barnefotograf_portrett_5.jpg" alt="">
                     </div>
-                    <div class="photo">
+                    <div class="photo" id="myImage">
                         <img src="./assets/fotograf_larvik_vestfold_sandefjord_barnefotograf_portrett_6.jpg" alt="">
                     </div>
                 </div>
                 <div class="column">
-                    <div class="photo">
+                    <div class="photo" id="myImage">
                         <img src="./assets/fotograf_larvik_vestfold_sandefjord_barnefotograf_portrett_7.jpg" alt="">
                     </div>
-                   
-                    <div class="photo">
+
+                    <div class="photo" id="myImage">
                         <img src="./assets/fotograf_larvik_vestfold_sandefjord_kreativt-portrett_.jpg" alt="">
                     </div>
                 </div>
@@ -129,8 +185,9 @@
     </div>
 </section>
 <section>
-    <div id="section5">
-        <h3>About me</h3>
+    <h3>About me</h3>
+    <div id="section5" class="about">
+    
         <div>
             <p>I am one of those who spent a lot of time of their life wondering
                 what was my purpose in life. I therefor have done many different
@@ -158,7 +215,7 @@
 </body>
 <footer>
     <section>
-        <container id="section6">
+        <container id="section6" class="footer">
             <div>
                 <h3>Contact</h3>
             </div>
