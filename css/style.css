@@ -128,12 +128,6 @@ a {
   cursor: pointer;
 }
 
-
-.front-end-container {
-  margin: auto;
-
-
-}
 section {
   min-height: 100%;
 }
@@ -225,6 +219,9 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 100px;
+  justify-content: center;
+  
+  
   
 } 
 
