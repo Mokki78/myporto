@@ -16,9 +16,6 @@ h1 {
  font-size: 25px;
 }
 
-h2 {
-  font-size: 40px;
-}
 
 .image-container {
   max-width: 1224px;
@@ -85,11 +82,10 @@ h2 {
 }
 
 
-
-
 .nav-container {
   display: flex;
   margin: 0 auto;
+  position: sticky;
 }
 
 #mainNav {
@@ -134,12 +130,14 @@ h2 {
 h2 {
   font-size: 45px;
   padding: 50px;
+
   
 }
 
 h3 {
   font-size: 25px;
   padding-left: 100px;
+ 
 }
 
 .myName {
@@ -147,6 +145,51 @@ h3 {
   font-weight: 400;
   font-style: normal;
   font-size: 25px;
+}
+
+.mobile-nav {
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+
+}
+
+.mobile-nav #myLinks {
+  display: none;
+}
+
+.mobile-nav a{
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:  17px;
+  display: block;
+
+}
+
+.mobile-nav a.icon {
+  background-color: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top:0;
+
+}
+
+.mobile-nav a:hover {
+  background-color: lightgrey;
+  color: black;
+
+}
+
+.active {
+  background-color: aqua;
+  color: white;
+}
+
+.link {
+  font-size: 18px;
+  border-bottom: 1px solid #dea175;
 }
 
 .porto {
@@ -319,7 +362,16 @@ img {
   padding-right: 300px;
   padding-bottom: 300px;
   padding-top: 100px;
+
   background-color: white;
+}
+
+.about-image {
+  height: 200px;
+}
+
+.about-header {
+  margin-top: 300px;
 }
 
 .about-content {
@@ -327,6 +379,10 @@ img {
   grid-template-columns: 1fr 1fr;
   gap: 80px;
   font-size: 1.5rem;
+}
+
+.about-text {
+  padding-top: 200px;
 }
 
 .favicon {
@@ -356,6 +412,14 @@ img {
   margin: 0 auto;
   gap: 20px;
 }
+
+.back-link {
+  font-size:20px;
+   position: fixed;
+  right: 50px;
+  bottom: 900px;
+}
+
 
 
 
