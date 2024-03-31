@@ -1,32 +1,29 @@
-const images = document.querySelectorAll(".photo img");
+const images = document.querySelectorAll(".photo-gallery .myImage");
 let imgSrc;
+
 images.forEach((img) => {
     img.addEventListener("click", (e) => {
         imgSrc = e.target.src;
+        imgModal(imgSrc);
         console.log("my images:", imgSrc)
     });
 });
 
 
-let imgModal = (src) => {
+function imgModal(src) {
 
-    const modal = document.createElement("div");
-    modal.setAttribute("class", "modal");
-    document.querySelector(".image-container").append(modal);
+    const modal = document.getElementById("myModal");
+    modal.style.display = "block";
+    
 
-    const newImage = document.createElement("img");
-    newImage.setAttribute("src", src);
-    modal.append(newImage)
+    const modalImg = document.getElementById("img01");
+    modalImg.src = src;
+
+    const closeBtn = document.querySelector(".close")
+    closeBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
 };
 
-imgModal();
 
-const close = document.createElement("i");
-close.setAttribute("class", "fas fa-times closeBtn");
-
-close.onclick = () => {
-    modal.remove();
-};
-
-modal.append(newImage, close);
 
