@@ -238,12 +238,13 @@ img {
 #intro-text-container {
   position: relative;
   text-align: center;
+ 
   color: white;
 }
 
 #intro-text {
   position: absolute;
-  top: 200px;
+  transform: translate(-50%, -50%);
   left: 60%;
   transform: translate(-50%, -50%);
   margin-top: 200px;
@@ -297,10 +298,7 @@ img {
   grid-template-columns: 1fr 1fr;
   margin: 100px;
   justify-content: center;
-  
-  
-  
-} 
+  } 
 
 .card {
   perspective: 150rem;
@@ -443,4 +441,95 @@ img {
     .photo-gallery{
         flex-direction: column;
     }
+}
+
+@media(max-width: 768px) {
+  .nav-container{
+      display: none;
+  }
+}
+
+@media(max-width: 768px) {
+  h2{
+     font-size: 25px;
+  }
+}
+
+@media(max-width: 768px) {
+  .f-e-card-container{
+    grid-template-columns: 6fr;
+    margin: 5px;
+    margin-top: 100px;
+      
+  }
+}
+
+@media(max-width: 768px) {
+  h3{
+    font-size: 18px;   
+     padding-bottom: 10px;
+  }
+}
+
+@media(max-width: 768px) {
+  .about-container{
+    padding: 10px;  
+  }
+}
+
+@media(max-width: 768px) {
+  .about-content{
+    padding: 30px;  
+    grid-template-columns: 2fr;
+    gap: 360px;
+    font-size: 18px;
+  }
+}
+
+@media(max-width: 768px) {
+  .footer-container{
+    padding: 10px;  
+    grid-template-columns: 1fr;
+    
+    font-size: 18px;
+  }
+}
+
+@media(max-width: 768px) {
+  .footer-contact{
+    flex-direction:column-reverse;
+    padding-bottom: 100px;
+    padding-top: 2px;
+    font-size: 18px;
+    gap: 100px;
+  }
+}
+
+@media(max-width: 768px) {
+  .back-link{
+    bottom: 700px;
+  }
+}
+
+@media(max-width: 768px) {
+  #intro-text{
+    padding: 12px;
+    margin-top: 80px;
+    
+  }
+}
+
+@media(max-width: 768px) {
+  h1{
+    padding: 12px;
+    margin-top: 60px;
+    font-size: 20px;
+    
+  }
+}
+
+@media(min-width: 768px) {
+  .mobile-nav{
+    display: none;
+  }
 }
