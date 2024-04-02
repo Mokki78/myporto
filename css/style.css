@@ -244,8 +244,8 @@ img {
 
 #intro-text {
   position: absolute;
-  transform: translate(-50%, -50%);
   left: 60%;
+  top: 100px;
   transform: translate(-50%, -50%);
   margin-top: 200px;
 }
@@ -305,7 +305,7 @@ img {
   position: relative;
   height: 40rem;
   max-width: 800px;
-  box-shadow: none;
+  
   background: none;
 }
 
@@ -512,24 +512,15 @@ img {
 }
 
 @media(max-width: 768px) {
-  #intro-text{
-    padding: 12px;
-    margin-top: 80px;
-    
-  }
-}
-
-@media(max-width: 768px) {
   h1{
     padding: 12px;
     margin-top: 60px;
-    font-size: 20px;
-    
+    font-size: 20px;   
   }
 }
 
 @media(min-width: 768px) {
-  .mobile-nav{
+  .mobile-nav {
     display: none;
   }
 }
