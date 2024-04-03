@@ -16,7 +16,6 @@ h1 {
  font-size: 25px;
 }
 
-
 .image-container {
   max-width: 1224px;
   width: 90%;
@@ -56,7 +55,7 @@ h1 {
 #myModal{
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 6;
   padding-top: 100px;
   left: 0;
   top: 0;
@@ -65,7 +64,6 @@ h1 {
   overflow: auto;
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.9) ;
-
 }
 
 .modal-content {
@@ -80,7 +78,6 @@ h1 {
 .modal-content:hover {
   transform: scale(1.1); /* Zoom effect on hover */
 }
-
 
 .nav-container {
   display: flex;
@@ -129,9 +126,7 @@ h1 {
 
 h2 {
   font-size: 45px;
-  padding: 50px;
-
-  
+  padding: 50px; 
 }
 
 h3 {
@@ -147,39 +142,94 @@ h3 {
   font-size: 25px;
 }
 
+.top-mobile-nav {
+  position: fixed;
+  top: 0;
+  padding-top: 20px;
+  background-color: #f2f2f2;
+  width: 100%;
+  z-index: 3;
+  
+  
+
+}
+
+.mobile-background {
+  display: flex;
+  z-index: 3;
+}
+
 .mobile-nav {
   overflow: hidden;
   background-color: black;
   position: relative;
-
-}
-
-.mobile-nav #myLinks {
-  display: none;
+  padding-top: 50px;
+  
 }
 
 .mobile-nav a{
-  color: white;
+   color: white;
   padding: 14px 16px;
   text-decoration: none;
   font-size:  17px;
   display: block;
-
-}
-
-.mobile-nav a.icon {
-  background-color: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top:0;
-
 }
 
 .mobile-nav a:hover {
   background-color: lightgrey;
   color: black;
+}
 
+.hamburger-icon {
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  top: 50px;
+  right: 30px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  background-color:#dea175;
+  width: 25px;
+  min-height: 3px;
+  margin: 5px 0;
+}
+
+.overlay-mobile {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 4;
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-mobile-content {
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  justify-items: center;
+}
+
+.overlay-mobile .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 25px;
+}
+
+.mobile-background {
+  z-index: 10;
 }
 
 .active {
@@ -200,7 +250,6 @@ a {
   color: black;
   list-style: none;
   text-decoration: none;
-
   cursor: pointer;
 }
 
@@ -211,7 +260,6 @@ a:hover {
 section {
   min-height: 100%;
 }
-
 
 img {
   width: 100%;
@@ -225,8 +273,7 @@ img {
   position: absolute;
   font-size: 20px;
   right: 100px;
-  top: 600px;
-  
+  top: 600px; 
 }
 
 #myButton:hover {
@@ -238,7 +285,6 @@ img {
 #intro-text-container {
   position: relative;
   text-align: center;
- 
   color: white;
 }
 
@@ -305,7 +351,6 @@ img {
   position: relative;
   height: 40rem;
   max-width: 800px;
-  
   background: none;
 }
 
@@ -342,8 +387,6 @@ img {
   transform: rotateY(0deg);
 }
 
-
-
 .close {
     color: white;
     font-size: 25px;
@@ -360,7 +403,6 @@ img {
   padding-right: 300px;
   padding-bottom: 300px;
   padding-top: 100px;
-
   background-color: white;
 }
 
@@ -400,22 +442,13 @@ img {
   font-size: 25px;
   padding-bottom: 200px;
   padding-top: 50px;
-
 }
-
 
 .copyright {
   display: flex;
   justify-content: center;
   margin: 0 auto;
   gap: 20px;
-}
-
-.back-link {
-  font-size:20px;
-   position: fixed;
-  right: 50px;
-  bottom: 900px;
 }
 
 
@@ -429,7 +462,6 @@ img {
         transform: scale(1);
     }
 }
-
 
 @media(max-width: 768px) {
     .modal-content {
@@ -459,7 +491,7 @@ img {
   .f-e-card-container{
     grid-template-columns: 6fr;
     margin: 5px;
-    margin-top: 100px;
+    margin-top: 10px;
       
   }
 }
@@ -479,9 +511,9 @@ img {
 
 @media(max-width: 768px) {
   .about-content{
-    padding: 30px;  
+    padding: 10px;  
     grid-template-columns: 2fr;
-    gap: 360px;
+   
     font-size: 18px;
   }
 }
@@ -507,15 +539,28 @@ img {
 
 @media(max-width: 768px) {
   .back-link{
-    bottom: 700px;
+    font-size:20px;
+   position: sticky;
+   padding-left: 200px;
+   margin-bottom: 600px;
+  z-index: 2;
+  }
+}
+
+
+
+@media(max-width: 768px) {
+  h1{
+    display: none;
+    padding: 12px;
+    margin-top: 60px;
+    font-size: 20px;   
   }
 }
 
 @media(max-width: 768px) {
-  h1{
-    padding: 12px;
-    margin-top: 60px;
-    font-size: 20px;   
+  .mobile-nav {
+    font-size: 16px;
   }
 }
 
@@ -524,3 +569,44 @@ img {
     display: none;
   }
 }
+
+@media(min-width: 768px) {
+  .hamburger-icon {
+    display: none;
+  }
+}
+
+@media(min-width: 768px) {
+  .hamburger-icon {
+    display: none;
+  }
+}
+
+@media(min-width: 768px) {
+  .mobile-background {
+    display: none;
+  }
+}
+
+@media(max-width: 768px) {
+  .intro-image {
+    display: none;
+  }
+}
+
+@media(min-width: 768px) {
+  .top-mobile-nav {
+    display: none;
+  }
+}
+
+@media(max-width: 768px) {
+  #myButton {
+    position: sticky;
+    margin-bottom: 100px;
+    z-index: 5;
+    
+}
+}
+
+
