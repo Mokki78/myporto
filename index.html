@@ -10,8 +10,15 @@
     <link rel="stylesheet" href="https://use.typekit.net/ckd5ojd.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/e82fe9e5d2.js" crossorigin="anonymous"></script>
+
+
+
     <script src="./js/modal.js" defer></script>
     <script src="./js/hamburger-menu.js" defer></script>
+    <script src="./js/overlay.js" defer></script>
+
+
+
     <title>Portofolio | Monika Saele</title>
 </head>
 <header>
@@ -31,19 +38,36 @@
             </nav>
 
         </div>
-        <div class="mobile-nav" id="myLinks">
 
-            <a href="#section1">Home</a>
-            <a href="#section2">Front-end</a>
-            <a href="#section3">UI Design</a>
-            <a href="#section4">Photography</a>
-            <a href="#section5">About</a>
-            <a href="#section6">Contact</a>
-
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i></a>
+        <div class="top-mobile-nav">
+            <span onclick="openNav()" class="hamburger-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </span>
+            <div class="porto">PORTOFOLIO 2024</div>
+            <div class="myName">Monika Sæle</div>
 
         </div>
+        <div class="mobile-background">
+            <img src="./assets/mobile_background.jpg">
+        </div>
+        <div class="mobile-nav overlay-mobile" id="myLinks">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-mobile-content"></div>
+
+            <a href="#section1" id="homeLink">Home</a>
+            <a href="#section2" id="frontendLink">Front-end</a>
+            <a href="#section3" id="uidesignLink">UI Design</a>
+            <a href="#section4" id="photographyLink">Photography</a>
+            <a href="#section5" id="aboutLink">About</a>
+            <a href="#section6" id="contactLink">Contact</a>
+        </div>
+
+
+
+    
+
 </header>
 <div id="intro-text-container">
     <img src="/assets/fotograf-monika-saele-_otograf-larvik_vestfold_barnefotograf_portrett.jpg"
@@ -68,6 +92,7 @@
         </h1>
     </div>
     <div><a href="#section6" id="myButton">CONTACT ME</a></div>
+
 </div>
 
 <div>
@@ -159,12 +184,15 @@
 
                         <p>To be able to login to see the profile use the Username: kminchelle and Password: 0lelplR
                         </p>
+
                         <a href="https://keen-pie-d8dbfa.netlify.app" target="_blank" class="link">Link to website</a>
 
                     </div>
                 </div>
             </div>
         </div>
+
+    </div>
     </div>
     </div>
 </section>
@@ -186,11 +214,12 @@
                             images style that
                             we are using for the prototype were already set, and we were to design the website both for
                             mobile and desktop using these requirements.</p>
+
                         <br>
                         <a href="https://xd.adobe.com/view/ffc0c1a7-bdb7-4b73-bc1a-7b6023ad1f73-aa93/" target="_blank"
                             class="link">Link to prototype for desktop</a>
                         <br>
-                        <br>
+
                         <a href="https://xd.adobe.com/view/5c88e149-5f50-40f0-a28c-58cd9a071945-09db/" target="_blank"
                             class="link">Link to prototype for mobile</a>
                     </div>
@@ -211,6 +240,7 @@
                         <a href="https://xd.adobe.com/view/6abc5f49-c59f-47e4-9074-cd10a0a746bc-3fef/screen/87d4f03e-371c-4083-8e49-d7234cc5c56a"
                             target="_blank" class="link">Link to Brand Style System</a>
                         <br>
+
                     </div>
                 </div>
             </div>
@@ -239,9 +269,11 @@
                             <li>People who strive to support local restaurants where good food isn't super expensive
                             </li>
                         </ul>
+
                         <br>
                         <a href="https://xd.adobe.com/view/76675bef-7998-4da2-a67b-504d6af18724-2334/screen/11b882f2-32c4-400a-8102-5435171437e7"
                             target="_blank" class="link">Link to brand style guide for Pizza Slice.</a>
+
                     </div>
                 </div>
             </div>
@@ -256,6 +288,7 @@
                         <p>This was an assignment for 2. year front-end course. The
                             assignment was to make a holiday booking site. This is the style tyle for the website.</p>
                         <br>
+
                     </div>
                 </div>
             </div>
@@ -308,6 +341,7 @@
     </div>
 </section>
 <section>
+
     <div id="section5">
         <h2 class="about-header">About</h2>
         <div class="about-container">
@@ -349,8 +383,7 @@
                 <div class="contact">
                     <h2>Contact</h2>
                 </div>
-                 <div class="footer-text">
-                </div>
+
                 <div id="black"></div>
                 <div class="back-link"> <a href="#section1">Back to top</a></div>
 
@@ -364,7 +397,9 @@
                             <br>
                             Larvik, Norway
                         </p>
-                          <div id="icon-container">
+
+
+                        <div id="icon-container">
                             <div id="icon1"><a href="https://www.instagram.com/fotografmonikasaele/" target="_blank"><i
                                         class="fa-brands fa-instagram" target="_blank"></i></a></div>
                             <div id="icon2"><a href="https://www.facebook.com/fotografmonikasaele" target="_blank"><i
@@ -372,15 +407,21 @@
                             <div id="icon3"><a href="https://www.linkedin.com/in/monika-s%C3%A6le-2a80918a/"
                                     target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
                         </div>
-                   </div>
+
+
+                    </div>
+
                     <div id="orange"></div>
                     <div class="copyright">
                         <p>Copyright@ Monika Sæle 2024</p>
 
                         <a href="#section1"><img src="./assets/Asset 2@2x.png" class="favicon"></a>
-            
-                 </div>
-           </container>
+
+                    </div>
+                </div>
+
+        </container>
+
     </section>
 </footer>
 
