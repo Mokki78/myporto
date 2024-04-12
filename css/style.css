@@ -702,7 +702,7 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+
   .mobile-only {
     display: flex;
   }
@@ -713,3 +713,4 @@ img {
     display: none;
   }
 }
+
