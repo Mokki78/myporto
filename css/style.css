@@ -13,7 +13,7 @@ html,
 }
 
 h1 {
- font-size: 25px;
+  font-size: 25px;
 }
 
 .image-container {
@@ -35,10 +35,10 @@ h1 {
 }
 
 .photo img {
-    width: 100%;
-    height: 100%;
-    border-radius:5px;
-    object-fit: cover; 
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
 }
 
 .myImage {
@@ -47,12 +47,11 @@ h1 {
   transition: 0.3s;
 }
 
-.myImage:hover{
+.myImage:hover {
   opacity: 0.7;
-
 }
 
-#myModal{
+#myModal {
   display: none;
   position: fixed;
   z-index: 6;
@@ -62,8 +61,8 @@ h1 {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.9) ;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .modal-content {
@@ -126,13 +125,12 @@ h1 {
 
 h2 {
   font-size: 45px;
-  padding: 50px; 
+  padding: 50px;
 }
 
 h3 {
   font-size: 25px;
   padding-left: 100px;
- 
 }
 
 .myName {
@@ -149,9 +147,6 @@ h3 {
   background-color: #f2f2f2;
   width: 100%;
   z-index: 3;
-  
-  
-
 }
 
 .mobile-background {
@@ -164,14 +159,13 @@ h3 {
   background-color: black;
   position: relative;
   padding-top: 50px;
-  
 }
 
-.mobile-nav a{
-   color: white;
+.mobile-nav a {
+  color: white;
   padding: 14px 16px;
   text-decoration: none;
-  font-size:  17px;
+  font-size: 17px;
   display: block;
 }
 
@@ -184,14 +178,14 @@ h3 {
   display: inline-block;
   cursor: pointer;
   position: fixed;
-  top: 50px;
-  right: 30px;
+  top: 45px;
+  right: 40px;
 }
 
 .bar1,
 .bar2,
 .bar3 {
-  background-color:#dea175;
+  background-color: #dea175;
   width: 25px;
   min-height: 3px;
   margin: 5px 0;
@@ -273,7 +267,7 @@ img {
   position: absolute;
   font-size: 20px;
   right: 100px;
-  top: 600px; 
+  top: 600px;
 }
 
 #myButton:hover {
@@ -344,13 +338,14 @@ img {
   grid-template-columns: 1fr 1fr;
   margin: 100px;
   justify-content: center;
-  } 
+}
 
 .card {
   perspective: 150rem;
   position: relative;
   height: 40rem;
   max-width: 800px;
+
   background: none;
 }
 
@@ -365,11 +360,14 @@ img {
   width: 80%;
   padding: 2rem;
   color: white;
+
+  box-shadow: 0 3px 0 1px rgba(0, 0, 0, 0.1);
 }
 
 .card-side.back {
   transform: rotateY(-180deg);
   background-color: white;
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.3);
   background-image: linear-gradient(43deg, black 100%);
   color: black;
 }
@@ -387,16 +385,73 @@ img {
   transform: rotateY(0deg);
 }
 
-.close {
-    color: white;
-    font-size: 25px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 20px;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
+.card_read-more {
+
+  display: none;
+  opacity: o;
+  height: 0;
+  transition: all 0.5s;
 }
+
+.card_read-more--open {
+  display: block;
+  opacity: 1;
+  height: 7rem;
+}
+
+.read-more-btn {
+  display: none;
+  color: white;
+  background-color: #dea175;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  position: relative;
+  z-index: 1;
+  transition: all o.5s;
+  cursor:pointer;
+}
+
+.read-more-btn:hover {
+  background-color: black;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+.close {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.arrow-container {
+  display: flex;
+  align-items: center;
+ 
+}
+.right-arrow {
+  display: inline-block;
+  margin: 30px;
+  margin-left:230px;
+  width: 15px;
+  height: 15px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  transform: rotate(135deg) translate(11px, 14px);
+ 
+}
+
+
+
+.arrow-move {
+  position: relative;
+  animation: move 2s ease-in-out infinite;
+}
+
 
 .about-container {
   padding-left: 300px;
@@ -451,162 +506,203 @@ img {
   gap: 20px;
 }
 
-
-
-
 @keyframes zoom {
-    from {
-        transform: scale(0);
-    }
-    to {
-        transform: scale(1);
-    }
-}
-
-@media(max-width: 768px) {
-    .modal-content {
-        width: 100%;
-    }
-}
-
-@media(max-width: 768px) {
-    .photo-gallery{
-        flex-direction: column;
-    }
-}
-
-@media(max-width: 768px) {
-  .nav-container{
-      display: none;
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
   }
 }
 
-@media(max-width: 768px) {
-  h2{
-     font-size: 25px;
+@media (max-width: 768px) {
+  .modal-content {
+    width: 100%;
   }
 }
 
-@media(max-width: 768px) {
-  .f-e-card-container{
+@media (max-width: 768px) {
+  .photo-gallery {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 25px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .f-e-card-container {
     grid-template-columns: 6fr;
     margin: 5px;
     margin-top: 10px;
-      
   }
 }
 
-@media(max-width: 768px) {
-  h3{
-    font-size: 18px;   
-     padding-bottom: 10px;
+@media (max-width: 768px) {
+  h3 {
+    font-size: 18px;
+    padding-bottom: 10px;
   }
 }
 
-@media(max-width: 768px) {
-  .about-container{
-    padding: 10px;  
+@media (max-width: 768px) {
+  .about-container {
+    padding: 10px;
   }
 }
 
-@media(max-width: 768px) {
-  .about-content{
-    padding: 10px;  
+@media (max-width: 768px) {
+  .about-content {
+    padding: 10px;
     grid-template-columns: 2fr;
-   
+
     font-size: 18px;
   }
 }
 
-@media(max-width: 768px) {
-  .footer-container{
-    padding: 10px;  
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 10px;
     grid-template-columns: 1fr;
-    
+
     font-size: 18px;
   }
 }
 
-@media(max-width: 768px) {
-  .footer-contact{
-    flex-direction:column-reverse;
-    padding-bottom: 100px;
-    padding-top: 2px;
+@media (max-width: 768px) {
+  .footer-contact {
+    flex-direction: column-reverse;
+
     font-size: 18px;
-    gap: 100px;
   }
 }
 
-@media(max-width: 768px) {
-  .back-link{
-    font-size:20px;
-   position: sticky;
-   padding-left: 200px;
-   margin-bottom: 600px;
-  z-index: 2;
+@media (max-width: 768px) {
+  .back-link {
+    font-size: 20px;
+    position: sticky;
+    padding-left: 200px;
+    margin-bottom: 40px;
+    z-index: 2;
   }
 }
 
-
-
-@media(max-width: 768px) {
-  h1{
-    display: none;
-    padding: 12px;
-    margin-top: 60px;
-    font-size: 20px;   
-  }
-}
-
-@media(max-width: 768px) {
-  .mobile-nav {
+@media (max-width: 768px) {
+  h1 {
     font-size: 16px;
   }
 }
 
-@media(min-width: 768px) {
+@media (max-width: 768px) {
+  .mobile-nav {
+    font-size: 16px;
+    font-family: "adonis-web", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+@media (min-width: 768px) {
   .mobile-nav {
     display: none;
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .hamburger-icon {
     display: none;
   }
 }
 
-@media(min-width: 768px) {
-  .hamburger-icon {
-    display: none;
-  }
-}
-
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .mobile-background {
     display: none;
   }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
+  .mobile-background {
+    height: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  #intro-text {
+    position: absolute;
+    margin-top: 0px;
+    left: 50%;
+    top: 0%;
+    padding: 10px;
+    padding-bottom: 20px;
+    transform: translate(-50%, -110%);
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
   .intro-image {
     display: none;
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .top-mobile-nav {
     display: none;
   }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   #myButton {
     position: sticky;
     margin-bottom: 100px;
-    z-index: 5;
-    
-}
+    margin: 0 auto;
+    z-index: 3;
+  }
 }
 
+@media (max-width: 768px) {
+  #myButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px;
+    margin: 0 auto;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  #less-text {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    perspective: 80rem;
+    position: relative;
+    height: 30rem;
+    max-width: 600px;
+
+    background: none;
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-side {
+   height: 350px;
+  }
+}
 
