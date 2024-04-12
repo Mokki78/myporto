@@ -436,8 +436,8 @@ img {
 }
 .right-arrow {
   display: inline-block;
-  margin: 30px;
-  margin-left:230px;
+  margin: 10px;
+  margin-left:200px;
   width: 15px;
   height: 15px;
   border-top: 1px solid black;
