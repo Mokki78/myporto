@@ -12,6 +12,7 @@ html,
   margin: 0;
 }
 
+
 h1 {
   font-size: 25px;
 }
@@ -639,7 +640,7 @@ img {
 @media (max-width: 768px) {
   #intro-text {
     position: absolute;
-    margin-top: 0px;
+    margin-top: 30px;
     left: 50%;
     top: 0%;
     padding: 10px;
