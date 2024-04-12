@@ -632,14 +632,14 @@ img {
 
 @media (max-width: 768px) {
   .mobile-background {
-    height: 700px;
+    height: 600px;
   }
 }
 
 @media (max-width: 768px) {
   #intro-text {
     position: absolute;
-    margin-top: 10px;
+    margin-top: 50px;
     left: 50%;
     top: 0%;
     padding: 10px;
