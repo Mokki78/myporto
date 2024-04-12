@@ -599,7 +599,7 @@ img {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
@@ -639,13 +639,13 @@ img {
 @media (max-width: 768px) {
   #intro-text {
     position: absolute;
-    margin-top: 80px;
+    margin-top: 10px;
     left: 50%;
     top: 0%;
     padding: 10px;
     padding-bottom: 20px;
-    transform: translate(-50%, -110%);
-    font-size: 16px;
+    transform: translate(-50%, -150%);
+    
   }
 }
 
@@ -711,5 +711,23 @@ img {
    display: none;
   }
 }
+
+@media (max-width: 768px) {
+  .mobile-only {
+   display: flex;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .mobile-only {
+   display: none;
+  }
+}
+
+
+
+
+
 
 
