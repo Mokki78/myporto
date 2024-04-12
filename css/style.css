@@ -153,6 +153,7 @@ h3 {
 .mobile-background {
   display: flex;
   z-index: 3;
+  height: 600px;
 }
 
 .mobile-nav {
@@ -223,9 +224,7 @@ h3 {
   font-size: 25px;
 }
 
-.mobile-background {
-  z-index: 10;
-}
+
 
 .active {
   background-color: aqua;
@@ -706,4 +705,11 @@ img {
    height: 350px;
   }
 }
+
+@media (max-width: 768px) {
+  .last-card {
+   display: none;
+  }
+}
+
 
