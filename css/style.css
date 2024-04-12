@@ -707,3 +707,11 @@ img {
   }
 }
 
+@media (max-width: 768px) {
+  .last-card {
+   display: none;
+   padding-bottom: 50px;
+  }
+}
+
+
