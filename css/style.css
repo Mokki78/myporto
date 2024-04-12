@@ -12,7 +12,6 @@ html,
   margin: 0;
 }
 
-
 h1 {
   font-size: 25px;
 }
@@ -153,6 +152,7 @@ h3 {
 .mobile-background {
   display: flex;
   z-index: 3;
+  height: 600px;
 }
 
 .mobile-nav {
@@ -221,10 +221,6 @@ h3 {
   top: 20px;
   right: 45px;
   font-size: 25px;
-}
-
-.mobile-background {
-  z-index: 10;
 }
 
 .active {
@@ -387,7 +383,6 @@ img {
 }
 
 .card_read-more {
-
   display: none;
   opacity: o;
   height: 0;
@@ -409,7 +404,7 @@ img {
   position: relative;
   z-index: 1;
   transition: all o.5s;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .read-more-btn:hover {
@@ -432,27 +427,22 @@ img {
 .arrow-container {
   display: flex;
   align-items: center;
- 
 }
 .right-arrow {
   display: inline-block;
   margin: 10px;
-  margin-left:200px;
+  margin-left: 200px;
   width: 15px;
   height: 15px;
   border-top: 1px solid black;
   border-left: 1px solid black;
   transform: rotate(135deg) translate(11px, 14px);
- 
 }
-
-
 
 .arrow-move {
   position: relative;
   animation: move 2s ease-in-out infinite;
 }
-
 
 .about-container {
   padding-left: 300px;
@@ -600,7 +590,7 @@ img {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
@@ -633,20 +623,19 @@ img {
 
 @media (max-width: 768px) {
   .mobile-background {
-    height: 700px;
+    height: 500px;
   }
 }
 
 @media (max-width: 768px) {
   #intro-text {
     position: absolute;
-    margin-top: 80px;
+    margin-top: 200px;
     left: 50%;
     top: 0%;
     padding: 10px;
     padding-bottom: 20px;
-    transform: translate(-50%, -110%);
-    font-size: 16px;
+    transform: translate(-50%, -150%);
   }
 }
 
@@ -703,15 +692,25 @@ img {
 
 @media (max-width: 768px) {
   .card-side {
-   height: 350px;
+    height: 350px;
   }
 }
 
 @media (max-width: 768px) {
   .last-card {
-   display: none;
-   padding-bottom: 50px;
+    display: none;
   }
 }
 
+
+  .mobile-only {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+}
 
