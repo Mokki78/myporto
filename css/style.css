@@ -640,7 +640,7 @@ img {
 @media (max-width: 768px) {
   #intro-text {
     position: absolute;
-    margin-top: 100px;
+    margin-top: 80px;
     left: 50%;
     top: 0%;
     padding: 10px;
