@@ -281,7 +281,7 @@ img {
 
 #intro-text {
   position: absolute;
-  left: 60%;
+  left: 50%;
   top: 100px;
   transform: translate(-50%, -50%);
   margin-top: 200px;
@@ -702,11 +702,6 @@ img {
   }
 }
 
-
-  .mobile-only {
-    display: flex;
-  }
-}
 
 @media (min-width: 768px) {
   .mobile-only {
