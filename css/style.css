@@ -358,13 +358,13 @@ img {
   padding: 2rem;
   color: white;
 
-  box-shadow: 0 3px 0 1px rgba(0, 0, 0, 0.1);
+  
 }
 
 .card-side.back {
   transform: rotateY(-180deg);
   background-color: white;
-  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.3);
+ 
   background-image: linear-gradient(43deg, black 100%);
   color: black;
 }
@@ -424,25 +424,7 @@ img {
   transition: 0.2s ease-in-out;
 }
 
-.arrow-container {
-  display: flex;
-  align-items: center;
-}
-.right-arrow {
-  display: inline-block;
-  margin: 10px;
-  margin-left: 200px;
-  width: 15px;
-  height: 15px;
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  transform: rotate(135deg) translate(11px, 14px);
-}
 
-.arrow-move {
-  position: relative;
-  animation: move 2s ease-in-out infinite;
-}
 
 .about-container {
   padding-left: 300px;
